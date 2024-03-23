@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GiftItem renders the gift item component 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Title"
+      id="1"
+      src="https://example.com/image.jpg"
+    />
+    <p
+      id="1"
+    >
+      Title
+    </p>
+  </div>
+</div>
+`;
