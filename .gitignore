@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .env
+tests
+GiftItem.test.js
 
 # Editor directories and files
 .vscode/*

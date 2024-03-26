@@ -24,22 +24,22 @@ export const useFechtGifs = (category) => {
   };
 };
 
-export const useFechtGifsRandom = () => {
-  const [image, setImage] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+// export const useFechtGifsRandom = () => {
+//   const [image, setImage] = useState([]);
+//   const [isLoading, setIsLoading] = useState(true);
 
-  const getImage = async () => {
-    const newImage = await getGiftRandom();
-    setImage(newImage);
-    setIsLoading(false);
-  };
+//   const getImage = async () => {
+//     const newImage = await getGiftRandom();
+//     setImage(newImage);
+//     setIsLoading(false);
+//   };
 
-  useEffect(() => {
-    getImage();
-  }, []);
+//   useEffect(() => {
+//     getImage();
+//   }, []);
 
-  return {
-    image: image,
-    isLoading: isLoading,
-  };
-}
+//   return {
+//     image: image,
+//     isLoading: isLoading,
+//   };
+// }

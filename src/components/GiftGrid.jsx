@@ -1,4 +1,5 @@
 import { useFechtGifs } from "../hooks/useFechtGifs";
+import Proptypes from "prop-types";
 
 import GifItem from "./GifItem";
 
@@ -23,3 +24,7 @@ export const GiftGrid = ({ category }) => {
 }
 
 export default GiftGrid;
+
+GiftGrid.propTypes = {
+  category: Proptypes.string.isRequired,
+};

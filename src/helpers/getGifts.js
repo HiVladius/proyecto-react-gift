@@ -1,8 +1,8 @@
 
 export const getGift = async (category) => {
   
-  const limit = 10;
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${VITE_GIFT_KEY}&q=${category}&limit=${limit}`;
+  const limit = 20;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=vv0mvkAQ6JdKr84ZAok01yjtE6yLoBTN&q=${category}&limit=${limit}`;
 
  
   const resp = await fetch(url);
@@ -21,19 +21,19 @@ export const getGift = async (category) => {
   };
 
 
-  export const getGiftRandom = async()=>{
+  // export const getGiftRandom = async()=>{
     
-    const limit2 = 10;
-    const url = `https://api.giphy.com/v1/gifs/trending?api_key=${VITE_GIFT_KEY}&limit=${limit2}`;
+  //   const limit2 = 10;
+  //   const url = `https://api.giphy.com/v1/gifs/trending?api_key=${VITE_GIFT_KEY}&limit=${limit2}`;
   
-    const resp = await fetch(url);
-    const { data } = await resp.json();
+  //   const resp = await fetch(url);
+  //   const { data } = await resp.json();
 
-    const gif = data.map((img) => ({
-      id: img.id,
-      title: img.title,
-      url: img.images.downsized_medium.url,
-    }));
+  //   const gif = data.map((img) => ({
+  //     id: img.id,
+  //     title: img.title,
+  //     url: img.images.downsized_medium.url,
+  //   }));
     
-    return gif;
-  }
+  //   return gif;
+  // }
